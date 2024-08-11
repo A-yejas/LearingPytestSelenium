@@ -62,5 +62,18 @@ What is mean by inheritance,
 1.Acquaring properties of  parent class
 '''
 
+class A():
+    def add(self):
+        print('\n A Add is')
+
+class B(A):
+    def add(self):
+        print('\n B add is')
+
+class C(B):
+    def add(self):
+        print(' \n C add is ')
+inst = B()
+inst.add()
 
 
