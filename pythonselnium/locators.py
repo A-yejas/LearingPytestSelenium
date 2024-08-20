@@ -12,24 +12,36 @@ So using that class it is very easy to handle them.
 '''
 import time
 from selenium import webdriver
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
 driver = webdriver.Chrome()
-
-driver.get('https://Rahulshettyacademy.com/angularpractice/')
-time.sleep(2)
 driver.maximize_window()
+driver.get('https://Rahulshettyacademy.com/angularpractice/')
+test = driver.getCurrentUrl()
+print(test)
 time.sleep(2)
 
-driver.find_element(By.NAME, "email").send_keys("hello@gmail.com")
+# b=driver.title
+# c=driver.current_url
+# print(b)
+# print(c)
 time.sleep(2)
+
+c=driver.find_element(By.NAME, "email").send_keys("hello@gmail.com")
+print(c)
+
+time.sleep(2)
+
 driver.find_element(By.ID, "exampleInputPassword1").send_keys("123456'")
 driver.find_element(By.ID, "exampleCheck1").click()
 time.sleep(2)
 driver.find_element(By.CSS_SELECTOR, "input[name='name']").send_keys('rahul')
 driver.find_element(By.CSS_SELECTOR, "#inlineRadio1").click()
 drop_down=Select(driver.find_element(By.ID, "exampleFormControlSelect1"))
+# drop_down(Keys.CONTROL, 'a')
+
 time.sleep(2)
 drop_down.select_by_index(1)
 time.sleep(2)

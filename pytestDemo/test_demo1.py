@@ -28,7 +28,7 @@ ypu can Mark (tag) tests @pytest.nark.smoke and rn the file with -m
 But in output you won't see about pass or fail.
 So this is like just running but not reporting.
 14.Data driven and parameterization.Can be done with return statements in tuple format.
-15.When you define fixture scope two class only. It will run once before class is initiated.
+15.When you define fixture scope to class only. It will run once before class is initiated.
 After all the class methods are executed.
 '''
 import pytest
@@ -36,10 +36,12 @@ import pytest
 
 @pytest.mark.smoke
 def test_demo1(test_first):
-    print("Testing")
+    print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Testing")
 
 def test_first():
-    print("Test1")
+    print("-------------------Test1")
 @pytest.mark.xfail
 def test_creditcar():
-    print("Test3")
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Test3")
+#For Print tags  "python -m pytest -s -m  xfail .\test_demo1.py"
+
