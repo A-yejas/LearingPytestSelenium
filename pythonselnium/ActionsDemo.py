@@ -22,9 +22,10 @@ Then only the sequence of actions will get executed.
 driver = webdriver.Chrome() #So if you don't put it here, then when it invoking your browser will not have any clue about running
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.maximize_window()
+# driver.manage().window().maximize()
 driver.implicitly_wait(2)
 actions = ActionChains(driver)
-time.sleep(1)
+# driver.manage().window().maximize()
 # driver.execute_script("window.scrollTo(0, 800)")
 actions.move_to_element(driver.find_element(By.ID,"mousehover")).perform()
 driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")#Sroll the screen

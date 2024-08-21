@@ -2,7 +2,7 @@
 Q:-let's see what is implicit weight.
 1.So implicit weight is more like global time.
 Out on top of your script, you will declare a global timeout.
-So once you declare your driver object here, you will say driver dot implicit weight.
+So once you declare your driver object here, you will say driver dot implicit wait.
 So let's say if it's a 5 seconds, this is your global timeout to the script.
 So what does this imply?
 It does help here.
