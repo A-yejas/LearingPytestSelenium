@@ -4,8 +4,9 @@ It's clearly says that we are invoking one Jenkins jar and here we are saying th
 1990 port in our local machine.
 Okay click on enter and it will start on You see that you will see something like started initialization.
 1.Enter item name=something >> select (And you call this as a freestyle project) and then click Ok And that will
-create you the best job
-2. get the path of this complete framework(Code) , in UI go to General >> And click on Advanced to tell that we are going to give Custom workspace(Under dirctoty field)
+create you the best job.
+2.get the path of this complete framework(Code) , in UI go to General >> And click on Advanced to tell
+that we are going to give Custom workspace(Under dirctoty field)
 3.Sroll down select "Execute Windows batch Command" option from the list.
 4.dynamic browser :- Select the project is parameterised >> Add Parameter >> Choice Parameter>> give all broweser names
-the liknk also  Build with parameterize
+the link also  Build with parameterize.

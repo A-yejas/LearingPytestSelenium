@@ -9,3 +9,18 @@ class Child(Parent):
 ob = Child()
 ob.func1()
 ob.func2()
+print(">>>>>>>")
+class Parent:
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child(Parent):
+    def greet(self):
+        print("Hello from the Child class!")
+        super().greet()  # Calls the greet method from the Parent class
+
+
+child = Child()
+child.greet()
+
+
