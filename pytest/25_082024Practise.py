@@ -164,33 +164,7 @@
 # def __init__()   ->default constructor
 # Constructor which has parameters is called a parameterized constructor.it is used to provide different values&distinct objects
 # def __init__(self,name,id)  --> parameterize constructor
-# class Student:
-#
-#     def __init__(self):
-#         print(">>>>>>>>>")
-#         self.name = input("Enter the name")
-#         self.age = input("Enter the age")
-#
-#
-#     def display(self):
-#         print(f"The name is {self.name}, and age is {self.age}")
-#
-# obj = Student()
-# obj.display()
-#####
-# class login:
-#     def __init__(self,email,pwd):
-#         self.email=email
-#         self.pwd=pwd
-#     def login_allow(self):
-#         if self.pwd == 'pwd123':
-#             print("Allowed")
-#         else:
-#             print('Not allowed')
-# object=login('yejas', 'pwd1234')
-# object.login_allow()
-# object1=login('Noor','pwd123')
-# object1.login_allow()
+
 ##Encapsulation:-
 # In python every thing is an public, is availbel every where
 # __Private :- Private things are not allowwed to access the out of the class but Private things basically allowed
@@ -254,15 +228,12 @@
 #         print('Children Home')
 # obj = Children()
 # obj.home()
-##Exception: An exception as an event that occurs during the execution of program that disrupts the normal
+##Exception:
+# An exception as an event that occurs during the execution of program that disrupts the normal
 # flow of instructions
 # ------------------
 #gitpath name:- https://github.com/PramodDutta/Py3xATBLearning/blob/main/ex02_July/24072024/test_Lab186.py
-# pytest -m "smoke" file path
-#pip install allure-pytest
-#pytest --alluredir=%allure_result_folder% ./tests
-#allure serve %allure_result_folder%
-#Clear the allure data user allure report --clean
+
 
 # -----
 import pytest

@@ -22,14 +22,30 @@ eg: pytest -k "partialfile"  this is how you can actually run selected module te
 We also saw you can run specific file.
 pytest File name.
 11.So let me add that you can Mark, (tag) test and then run with -m option.
-ypu can Mark (tag) tests @pytest.nark.smoke and rn the file with -m
+y0u can Mark (tag) tests @pytest.mark.smoke and rn the file with -m
+RUN:- pytest -m tag_name(example:-smoke) -v -s
 12.ypu can Mark (tag) tests @pytest.nark.skip
+####But if you use skip, the complete test case is skipping and the operations, what you need for your
+further test cases is also not happening at that time.
 13.@pytest.mark.xfail when you give this, this particular test will run.
-But in output you won't see about pass or fail.
-So this is like just running but not reporting.
+But in output you won't see about pass or fail.So this is like just running but not reporting and also wont appear in
+console related that data.
+---------
 14.Data driven and parameterization.Can be done with return statements in tuple format.
 15.When you define fixture scope to class only. It will run once before class is initiated.
 After all the class methods are executed.
+16.'pytest -k 'filename(function name) -s -v'
+17.  ---> And you have some  Warnings in output after execution
+What is this?
+So they were saying that you have to register this marks(eg:marl.smoke) in your project.
+Now smoke is the mark you defined, right?
+18."conftest.py" That file you have to specifically define with that name only confest,.
+This is the standard which you have to follow in that if yiu declared So in that file, if you declare your fixture,
+then that fixture will be available to all the test files present in that specific folder.
+19.Fixtures are used to set up and tear down methods.
+Fixtures are used for setup and.It was the setup and teardown methods for test cases.Conf text file.
+To.Generalize fixture.Feature and make it available to all test cases.
+2.
 '''
 import pytest
 

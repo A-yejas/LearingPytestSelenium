@@ -52,3 +52,6 @@ driver.find_element(By.CSS_SELECTOR, ".promoCode").send_keys('rahulshettyacademy
 driver.find_element(By.CSS_SELECTOR, ".promoBtn").click()
 # time.sleep(5)
 driver.find_element(By.CLASS_NAME,"promoInfo").click()
+# wait=WebDriverWait(driver=self.driver,timeout=5)
+#wait.until(EC.alert_is_present())
+

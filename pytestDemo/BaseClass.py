@@ -16,3 +16,10 @@ class BaseClass:
 
         logger.setLevel(logging.INFO)
         return logger
+'''
+# pytest -m "smoke" file path
+#pip install allure-pytest
+#pytest --alluredir=%allure_result_folder% ./tests
+#allure serve %allure_result_folder%
+#Clear the allure data user allure report --clean
+'''

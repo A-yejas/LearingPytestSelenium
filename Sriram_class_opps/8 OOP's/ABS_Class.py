@@ -27,3 +27,6 @@ class Two(One):
 ins = Two()
 ins.add()
 
+'''
+Literals are the  actual values
+'''

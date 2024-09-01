@@ -151,3 +151,24 @@ The page object pattern intends to create an object for each part of a web page.
 This technique helps build a separation between the test code and the actual code that interacts with the web page.
 
 '''
+'''
+23-08-2024:- What is X path axes :- is nothing but a relation shipe between your current element to the target element
+X-path is basically used for finding control if it is not having a unique identication parameter. Then will go for
+x-path or css selector.
+Access-Methods:- 
+1. Ancestor ,2.Parent, 3.Sibiling, 4.Child, 5.Descendant
+1.Ancestor Means basically Parent + Grand Parent
+5.Desendant Means my childerent + Grand Childeren.
+Every method have 2 types:-
+Ancestor:- 1.Ancestor 2. ancestor-or-self
+Ancestor means it will call only parent and grand parent
+Ancestor-or-self :- Means the current also it includes you also.
+Descendant :- 1.Descendant 2.Descendant-or-self
+Descendant : Means:- it will call child+ grand child 
+Descendant-of-self:- Means Me + child+ grand child 
+Sibling have 2 methods:- 1.preceding-sibling 2.following sibling
+
+
+
+'''
+
