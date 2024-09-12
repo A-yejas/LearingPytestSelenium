@@ -1,5 +1,5 @@
 '''
-Q:-let's see what is implicit weight.
+Q:-let's see what is implicit wait.
 1.So implicit weight is more like global time.
 Out on top of your script, you will declare a global timeout.
 So once you declare your driver object here, you will say driver dot implicit wait.
